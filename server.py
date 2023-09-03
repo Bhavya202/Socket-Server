@@ -3,10 +3,8 @@ from threading import Thread
 import random
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
 ip_address = '127.0.0.1'
 port = 8000
-
 server.bind((ip_address, port))
 server.listen()
 
@@ -32,7 +30,6 @@ questions = [
      " Who gifted the Statue of Libery to the US? \n a.Brazil\n b.France\n c.Wales\n d.Germany",
      " Which planet is closest to the sun? \n a.Mercury\n b.Pluto\n c.Earth\n d.Venus"
 ]
-
 answers = ['d', 'a', 'b', 'a', 'a', 'a', 'a', 'b', 'a', 'c', 'b', 'd', 'd', 'c', 'a', 'b', 'a']
 
 print("Server has started...")
